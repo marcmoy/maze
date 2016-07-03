@@ -32,6 +32,8 @@ class Node
       node[:type] = :empty
     when "S"
       node[:type] = :start
+      node[:g] = 0
+      node[:f] = 0
       @start_node = node
     when "E"
       node[:type] = :end
@@ -56,13 +58,5 @@ class Node
     x, y = *pos
     y ? nodes.select{|node| node[:pos] == [x,y]}[0] : nodes[x]
   end
-
+  
 end
-
-nodes = Node.new("maze1.txt")
-start_node = nodes.start_node
-end_node = nodes.end_node
-
-p nodes[0]
-p start_node
-p end_node
