@@ -6,3 +6,4 @@ Things to do:
 * handle mazes that have no solution
 * check program with larger scaled mazes
 * learn how to correctly use git commands
+* learn markdown syntax
