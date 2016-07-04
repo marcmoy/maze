@@ -48,7 +48,7 @@ class Maze
         end
    end
    
-   #private
+   private
    
    def find_min_f_node_from_open_list
         min_f = open_list.collect{|node| node[:f]}.min
