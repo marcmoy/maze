@@ -122,3 +122,8 @@ class Maze
   end
   
 end
+
+if $PROGRAM_NAME == __FILE__
+    maze = Maze.new('maze4.txt')
+    maze.solve
+end
